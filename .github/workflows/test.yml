@@ -20,8 +20,8 @@ jobs:
         config:
           - { name: "Windows Qt6", os: windows-latest, make: nmake, qtversion: 6.1.1, qtextramodules: qt5compat }
           - { name: "Windows", os: windows-latest, make: nmake, qtversion: 5.15.2 }
-          - { name: "macOS", os: macos-latest, make: "make -j2" }
-          - { name: "Ubuntu", os: ubuntu-latest, make: "make -j2" }
+          - { name: "macOS", os: macos-latest, make: "make -j2", qtversion: 5.15.2 }
+          - { name: "Ubuntu", os: ubuntu-latest, make: "make -j2", qtversion: 5.15.2 }
       fail-fast: false
 
     name: ${{ matrix.config.name }}
