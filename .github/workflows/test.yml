@@ -34,7 +34,7 @@ jobs:
         uses: jurplel/install-qt-action@v2
         with:
           version: ${{ env.QT_VERSION }}
-          modules: 'qtmultimedia'
+          modules: 'qtmultimedia qt5compat'
           aqtversion: '==2.0.0'
 
       - name: Setup MSVC Toolchain [Windows]
