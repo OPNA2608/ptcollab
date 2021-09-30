@@ -35,6 +35,7 @@ jobs:
         with:
           version: ${{ env.QT_VERSION }}
           modules: 'qttools qtmultimedia'
+          aqtversion: '==2.0.0'
 
       - name: Setup MSVC Toolchain [Windows]
         if: ${{ runner.os == 'Windows' }}
