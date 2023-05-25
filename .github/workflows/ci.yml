@@ -240,7 +240,7 @@ jobs:
             rmdir bin
 
             mv -v share/ptcollab/* ./
-            mv -v share/doc/pxtone/LICENSE-pxtone ./LICENSE-pxtone
+            mv -v share/doc/ptcollab/LICENSE-pxtone ./LICENSE-pxtone
             mv -v share/doc/ptcollab/LICENSE ./LICENSE-ptcollab
 
             rm -v -rf share/
